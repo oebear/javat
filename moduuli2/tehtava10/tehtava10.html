@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting progr</title>
+</head>
+<body>
+    <h2>Voting program</h2>
+
+    <div id="candidatesetup">
+        <label>Enter number of candidates:</label><br>
+        <input type="number" id="candidatecount" min="1">
+        <button onclick="startst()">Start Registration</button>
+    </div>
+
+    <div id="candidateregistration" style="display: none;">
+        <label id="candidatePrompt">Name for candidate 1:</label><br>
+        <input type="text" id="candidatename">
+        <button onclick="registerc()">Register Candidate</button>
+    </div>
+
+    <div id="votersetup" style="display: none;">
+        <label>Enter number of voters:</label><br>
+        <input type="number" id="votercount" min="1">
+        <button onclick="startv()">Start Voting</button>
+    </div>
+
+    <div id="voting" style="display: none;">
+        <label id="voterprompt">Voter 1, enter the name of your chosen candidate (or leave empty for blank vote):</label><br>
+        <input type="text" id="vote">
+        <button onclick="submitv()">Submit Vote</button>
+    </div>
+
+    <script src="tehtava10.js"></script>
+</body>
+</html>
